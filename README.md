@@ -55,7 +55,7 @@ Omnikon_Hackathon/
 | Name | Role | GitHub Username |
 |---|---|---|
 | Sree Varsha M | Team Lead / Full-stack & AI Integration | [@25it104-sreevarsha](https://github.com/25it104-sreevarsha) |
-| Suvetha S | Frontend & UX / Documentation | *(add GitHub username)* |
+| Suvetha S | Frontend & UX / Documentation | 25it111-afk |
 
 > All team members are registered OMNIKON 2026 participants and have contributed equally to this project.
 
