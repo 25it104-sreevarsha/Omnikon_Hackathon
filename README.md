@@ -1,56 +1,68 @@
-# GrainGuard AI
+# GrainGuard AI 🌾
+### Predictive Spoilage Risk Advisor — Team HarvestGuard
 
-**Team HarvestGuard** — Omnikon National Hackathon 2026
-**Problem Statement:** Omni_AgriTech_8 — Reducing Grain Spoilage in Rural Storage
+**Hackathon:** OMNIKON National Hackathon 2026
+**Theme:** Software / AgriTech
+**Problem Statement:** Reducing Grain Spoilage in Rural Storage
 
-## Overview
+---
 
-GrainGuard AI is a smart spoilage-risk advisor for rural grain storage. Workers photograph the grain heap through the mobile app; an AI vision model checks for early mold, discoloration, or pest damage, while a risk engine combines this with grain-science moisture/temperature thresholds and hyperlocal weather forecasts to compute a live Spoilage Risk Score (Low / Medium / High). The app returns one clear, voice-guided instruction in the worker's local language — no hardware required for the MVP, with an optional ESP32 + DHT22 sensor tier for warehouses that want continuous live monitoring.
+## 📌 Problem
 
-## Key Features
+Poor storage conditions in rural warehouses cause **10–20% of the global grain harvest** to be lost every year. Most tech fixes assume sensor budgets that rural storage units simply don't have.
 
-- Photo-based Spoilage Risk Score — zero hardware needed
-- AI vision model for early mold/pest detection
-- Weather-aware prediction using Open-Meteo forecasts
-- Voice + local-language alerts for low-literacy users
-- Optional live sensor tier (ESP32 + DHT22)
-- Manager dashboard with risk history across storage units
+## 💡 Our Solution
 
-## Tech Stack
+**GrainGuard AI** is a zero-hardware MVP that turns a simple photo of a grain heap into a live **Spoilage Risk Score**, combining AI vision, grain-science thresholds, and hyperlocal weather forecasts — delivered as one clear, voice-guided instruction in the worker's own language.
 
-- **Frontend:** React Native / Flutter
-- **Backend:** Node.js + Express
-- **Database:** Firebase / MongoDB
-- **AI/ML:** MobileNet image model + rule-based risk engine
-- **Weather API:** Open-Meteo (free tier)
-- **Optional Hardware:** ESP32 + DHT22
-- **Notifications:** Firebase Cloud Messaging + local-language TTS
+### Key Features
+- 📸 **Photo Risk Scan** — instant risk score, no setup needed
+- 🤖 **Early Defect Detection** — AI vision flags mold, discoloration & pest damage
+- 🌦️ **Weather-Aware Forecast** — predicts risk before it spikes
+- 🔊 **Voice + Local Language** — accessible for low-literacy workers
+- 🔌 **Optional Sensor Mode** — ESP32 + DHT22 for live continuous monitoring
+- 📊 **Manager Dashboard** — track risk across multiple storage units
 
-## Getting Started
+## 🛠️ Tech Stack
 
-> Setup instructions will be added here once the initial project scaffold is committed.
+| Layer | Tech |
+|---|---|
+| Frontend | React Native / Flutter |
+| Backend | Node.js + Express |
+| AI/ML | MobileNet image model + rule-based Spoilage Risk Engine |
+| Data & APIs | Firebase / MongoDB + Open-Meteo Weather API |
+| Hardware (optional) | ESP32 + DHT22 |
 
-```bash
-# Clone the repo
-git clone <repo-url>
-cd grainguard-ai
+## 📁 Repository Structure
 
-# Install dependencies
-npm install
-
-# Run locally
-npm run dev
+```
+Omnikon_Hackathon/
+├── frontend/       # Mobile app (worker-facing UI)
+├── backend/        # API, auth, orchestration
+├── ai-model/        # Vision model + risk engine logic
+├── assets/         # Diagrams, mockups, images
+├── docs/           # Problem statement, submission deck, notes
+└── README.md
 ```
 
-## Contributors
+## 🚀 Project Status
 
-| Name | GitHub Username | Role |
-|------|------------------|------|
-| Sree Varsha M | @TBD | Team Lead — Backend & AI Integration |
-| Suvetha S | @TBD | Frontend & UI/UX |
+🟢 **Phase 1 complete** — Idea submitted and approved
+🟡 **Phase 2 in progress** — Repository initialized, development starting
 
-> Only registered participants of Team HarvestGuard contribute to this repository. All contributions reflect the work of the listed team members; AI coding tools are used as assistive tools per hackathon rules.
+## 👥 Team & Contributors
 
-## License
+| Name | Role | GitHub Username |
+|---|---|---|
+| Sree Varsha M | Team Lead / Full-stack & AI Integration | [@25it104-sreevarsha](https://github.com/25it104-sreevarsha) |
+| Suvetha S | Frontend & UX / Documentation | *(add GitHub username)* |
 
-TBD
+> All team members are registered OMNIKON 2026 participants and have contributed equally to this project.
+
+## 🔗 Links
+
+- Repository: https://github.com/25it104-sreevarsha/Omnikon_Hackathon
+- Phase 1 Submission: see `docs/` folder
+
+---
+*One Mission. Build the Impossible.*
